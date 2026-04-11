@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+
+body {
+
+  background:
+  linear-gradient(135deg, #AE2448, #e05a7a);
+
+  display: flex;
+  justify-content: center;
+
+  padding: 40px;
+
+  min-height: 100vh;
+}
+
+/* CONTAINER */
+
+.container {
+
+  width: 100%;
+  max-width: 950px;
+
+  background:
+  rgba(255,255,255,0.97);
+
+  backdrop-filter: blur(10px);
+
+  padding: 35px;
+
+  border-radius: 25px;
+
+  box-shadow:
+  0 20px 50px rgba(0,0,0,0.2),
+  0 8px 20px rgba(0,0,0,0.08);
+
+  animation: fadeIn 0.6s ease;
+}
+
+/* TITLE */
+
+h1 {
+
+  text-align: center;
+
+  color: #AE2448;
+
+  margin-bottom: 30px;
+
+  font-size: 2rem;
+
+  font-weight: 700;
+}
+
+/* SECTION */
+
+.section {
+
+  margin-bottom: 28px;
+
+  padding: 24px;
+
+  border-radius: 20px;
+
+  background:
+  linear-gradient(to bottom, #ffffff, #fafafa);
+
+  border: 1px solid #f0f0f0;
+
+  box-shadow:
+  0 5px 15px rgba(0,0,0,0.04);
+
+  transition: 0.3s;
+}
+
+.section:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* SECTION TITLES */
+
+.section h2 {
+
+  color: #AE2448;
+
+  margin-bottom: 18px;
+
+  font-size: 1.3rem;
+}
+
+.section h4 {
+
+  margin-top: 18px;
+
+  margin-bottom: 5px;
+
+  color: #AE2448;
+
+  font-size: 1rem;
+}
+
+/* LABEL */
+
+label {
+
+  display: block;
+
+  margin-top: 14px;
+
+  font-size: 0.93rem;
+
+  font-weight: 600;
+
+  color: #444;
+}
+
+/* INPUTS */
+
+input,
+select,
+textarea {
+
+  width: 100%;
+
+  padding: 14px;
+
+  margin-top: 8px;
+
+  border-radius: 14px;
+
+  border: 2px solid #f2d4dd;
+
+  outline: none;
+
+  transition: 0.3s;
+
+  font-size: 0.96rem;
+
+  background: white;
+}
+
+/* FOCUS */
+
+input:focus,
+select:focus,
+textarea:focus {
+
+  border-color: #AE2448;
+
+  box-shadow:
+  0 0 0 4px rgba(174,36,72,0.12),
+  0 8px 20px rgba(174,36,72,0.12);
+
+  transform: translateY(-2px);
+}
+
+/* NUMBER INPUT */
+
+input[type="number"] {
+
+  appearance: auto;
+
+  padding-right: 10px;
+}
+
+/* NUMBER ARROWS */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+
+  opacity: 1;
+
+  height: 30px;
+
+  cursor: pointer;
+}
+/* DATE INPUT */
+
+input[type="date"] {
+
+  background:
+  linear-gradient(to right, #fff, #fff8fa);
+
+  color: #444;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* DATE ICON */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+
+  cursor: pointer;
+
+  padding: 10px;
+
+  border-radius: 10px;
+
+  background:
+  linear-gradient(135deg, #AE2448, #e05a7a);
+
+  filter: invert(1);
+
+  transition: 0.3s;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+
+  transform: scale(1.08);
+
+  box-shadow:
+  0 5px 15px rgba(174,36,72,0.3);
+}
+
+/* TEXTAREA */
+
+textarea {
+
+  resize: vertical;
+
+  min-height: 120px;
+}
+
+/* CHECKBOX GROUP */
+
+.checkbox-group {
+
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit, minmax(220px,1fr));
+
+  gap: 15px;
+
+  margin-top: 15px;
+}
+
+/* CHECKBOX CARD */
+
+.checkbox-group label {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  background: white;
+
+  padding: 14px;
+
+  border-radius: 14px;
+
+  border: 2px solid #f1d4dc;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.checkbox-group label:hover {
+
+  border-color: #AE2448;
+
+  background: #fff5f8;
+
+  transform: translateY(-2px);
+}
+
+.checkbox-group input {
+
+  width: auto;
+
+  accent-color: #AE2448;
+
+  transform: scale(1.2);
+}
+
+/* BUTTON */
+
+.submit-btn {
+
+  width: 100%;
+
+  padding: 15px;
+
+  margin-top: 28px;
+
+  background:
+  linear-gradient(to right, #AE2448, #e05a7a);
+
+  color: white;
+
+  border: none;
+
+  border-radius: 35px;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  box-shadow:
+  0 10px 25px rgba(174,36,72,0.35);
+}
+
+.submit-btn:hover {
+
+  transform: translateY(-3px) scale(1.02);
+
+  box-shadow:
+  0 18px 35px rgba(174,36,72,0.5);
+}
+
+/* LOGIN TEXT */
+
+.login-text {
+
+  text-align: center;
+
+  margin-top: 20px;
+
+  color: #666;
+}
+
+/* LOGIN BUTTON */
+
+.login-btn {
+
+  display: block;
+
+  text-align: center;
+
+  margin-top: 12px;
+
+  padding: 13px;
+
+  border-radius: 30px;
+
+  border: 2px solid #AE2448;
+
+  color: #AE2448;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+
+  background: #AE2448;
+
+  color: white;
+
+  transform: scale(1.02);
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn {
+
+  from {
+
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 22px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .section {
+    padding: 18px;
+  }
+
+  .checkbox-group {
+    grid-template-columns: 1fr;
+  }
+}
