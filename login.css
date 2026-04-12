@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  }
+
+/* ================= BODY ================= */
+body {
+background: linear-gradient(to right, #AE2448, #e05a7a);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+background: white;
+padding: 40px;
+border-radius: 20px;
+width: 380px;
+box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* ================= TITLE ================= */
+h1 {
+text-align: center;
+color: #AE2448;
+margin-bottom: 25px;
+}
+
+/* ================= LABEL ================= */
+label {
+display: block;
+margin-top: 10px;
+font-size: 0.9rem;
+color: #444;
+}
+
+/* ================= INPUT ================= */
+input {
+width: 100%;
+padding: 12px;
+margin-top: 6px;
+border-radius: 10px;
+border: 1px solid #ccc;
+transition: 0.3s;
+}
+
+input:focus {
+border-color: #AE2448;
+outline: none;
+box-shadow: 0 0 8px rgba(174,36,72,0.3);
+}
+
+/* ================= BUTTON ================= */
+.submit-btn {
+width: 100%;
+padding: 14px;
+margin-top: 20px;
+background: linear-gradient(to right, #AE2448, #e05a7a);
+color: white;
+border: none;
+border-radius: 30px;
+font-size: 1rem;
+cursor: pointer;
+box-shadow: 0 10px 20px rgba(174,36,72,0.4);
+transition: 0.3s;
+}
+
+.submit-btn:hover {
+transform: translateY(-2px) scale(1.02);
+box-shadow: 0 15px 30px rgba(174,36,72,0.6);
+}
+
+/* ================= TEXT ================= */
+.login-text {
+text-align: center;
+margin-top: 15px;
+font-size: 0.9rem;
+color: #555;
+}
+
+/* ================= LINK BUTTON ================= */
+.login-btn {
+display: block;
+text-align: center;
+margin-top: 10px;
+padding: 12px;
+border-radius: 25px;
+border: 2px solid #AE2448;
+color: #AE2448;
+text-decoration: none;
+font-weight: 500;
+transition: 0.3s;
+}
+
+.login-btn:hover {
+background: #AE2448;
+color: white;
+transform: scale(1.03);
+}
