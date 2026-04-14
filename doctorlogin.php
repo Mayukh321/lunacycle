@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </form>
 
 </div>
-
+//POP UP
 <?php if(isset($_GET['success'])) { ?>
 
 <script>alert("✅ Signup successful! Please login.");</script>
