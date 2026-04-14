@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+//check if the user is present
 if(!isset($_SESSION['user_id'])){
     header("Location: user_login.php");
     exit();
