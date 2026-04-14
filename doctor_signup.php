@@ -96,34 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <link rel="stylesheet" href="doctor_signup.css">
 
-<style>
-.required { color:red; }
 
-/* FILE UI */
-.file-upload {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 8px;
-}
-
-.file-upload input {
-    display: none;
-}
-
-.file-label {
-    background: linear-gradient(to right, #AE2448, #e05a7a);
-    color: white;
-    padding: 10px 18px;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-#file-name {
-    font-size: 0.85rem;
-    color: #555;
-}
-</style>
 
 </head>
 
