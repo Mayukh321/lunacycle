@@ -346,7 +346,7 @@ Login
 </div>
 
 <script>
-
+//AGE calculation
 function calculateAge() {
 
     let dob = document.getElementById("dob").value;
@@ -365,7 +365,7 @@ function calculateAge() {
     document.getElementById("age").value = age;
 }
 
-
+//cal avg cycle
 function calculateAverageCycle() {
 
     let cycles = [];
