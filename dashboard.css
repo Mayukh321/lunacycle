@@ -7,6 +7,8 @@
 
 body{
   background:#e6e8ed;
+  overflow-x:hidden;
+
 }
 
 /* GRID */
@@ -264,44 +266,9 @@ body{
 }
 
 
-/* RESPONSIVE */
+ 
 
-@media(max-width:768px){
 
-  .grid-container{
-
-    grid-template-columns:1fr;
-
-    grid-template-areas:
-    "header"
-    "main";
-  }
-
-  #sidebar{
-    display:none;
-  }
-
-  .header{
-    left:0;
-  }
-
-  .main-container{
-    padding:18px;
-  }
-
-  .suggestion-card{
-    flex-direction:column;
-  }
-
-  .card-icon{
-
-    width:55px;
-
-    height:55px;
-
-    font-size:1.5rem;
-  }
-}
 
 /* EXTRA */
 
@@ -309,9 +276,6 @@ html{
   scroll-behavior:smooth;
 }
 
-body{
-  overflow-x:hidden;
-}
 /* DASHBOARD CARD SPACING */
 
 .suggestion-card{
@@ -461,15 +425,6 @@ body{
 
     font-weight:600;
 }
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    overflow-x:hidden;
-}
-
 
 /* EXPORT */
 
@@ -654,4 +609,42 @@ body{
 
         font-size:1.5rem;
     }
+}
+
+
+@media(max-width:768px){
+
+  .grid-container{
+
+    grid-template-columns:1fr;
+
+    grid-template-areas:
+    "header"
+    "main";
+  }
+
+  #sidebar{
+    display:none;
+  }
+
+  .header{
+    left:0;
+  }
+
+  .main-container{
+    padding:18px;
+  }
+
+  .suggestion-card{
+    flex-direction:column;
+  }
+
+  .card-icon{
+
+    width:55px;
+
+    height:55px;
+
+    font-size:1.5rem;
+  }
 }
