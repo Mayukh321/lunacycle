@@ -1,11 +1,11 @@
 <?php
 session_start();
-
+//check if the user exists
 if(!isset($_SESSION['user_id'])){
     header("Location: user_login.php");
     exit();
 }
-
+//make connection between db and file
 $conn = new mysqli(
     "localhost",
     "root",
