@@ -14,7 +14,7 @@ $conn = new mysqli(
 );
 
 $user_id = $_SESSION['user_id'];
-
+//fetch user details
 $user = $conn->query(
 "SELECT * FROM users WHERE user_id='$user_id'"
 )->fetch_assoc();
