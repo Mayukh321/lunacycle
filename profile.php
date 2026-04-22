@@ -19,7 +19,7 @@ $user = $conn->query(
 "SELECT * FROM users WHERE user_id='$user_id'"
 )->fetch_assoc();
 
-/* PROFILE IMAGE */
+/* profile image */
 
 if(
 !empty($user['profile']) &&
