@@ -14,7 +14,7 @@ $conn = new mysqli(
 );
 
 $user_id = $_SESSION['user_id'];
-
+//descend order
 $result = $conn->query("
 SELECT * FROM cycle_history
 WHERE user_id='$user_id'
