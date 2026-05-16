@@ -180,3 +180,57 @@
         bottom:90px;
     }
 }
+
+
+/* =========================
+   MOBILE CHATBOT FIX
+========================= */
+
+@media(max-width:768px){
+
+    .chat-container{
+
+        width:90%;
+
+        height:70vh;
+
+        right:5%;
+
+        bottom:90px;
+
+        border-radius:20px;
+    }
+
+    .chat-header{
+
+        font-size:16px;
+    }
+
+    .chat-messages{
+
+        font-size:14px;
+    }
+
+    .chat-input{
+
+        padding:10px;
+    }
+
+    .chat-send{
+
+        padding:10px 14px;
+    }
+
+    .chat-toggle{
+
+        width:55px;
+
+        height:55px;
+
+        font-size:24px;
+
+        bottom:20px;
+
+        right:20px;
+    }
+}
