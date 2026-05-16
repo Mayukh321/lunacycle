@@ -245,5 +245,73 @@ id="successBox">
 
 </div>
 
+<script>
+
+/* GOOGLE SHEET URL */
+
+const scriptURL =
+"https://script.google.com/a/macros/heritageit.edu.in/s/AKfycbymojP9UovWMgBjh4j_Bxj6I11pDr_I8CeksKRcfVVRP6OqnMZEciTVr-LuvME__INgAA/exec";
+
+/* FORM */
+
+const form =
+document.getElementById(
+"feedbackForm"
+);
+
+/* SUBMIT */
+
+form.addEventListener(
+"submit",
+
+function(e){
+
+    e.preventDefault();
+
+    const formData =
+    new FormData(form);
+
+    const data = {
+
+        feedback:
+        formData.get("feedback")
+    };
+
+    fetch(scriptURL,{
+
+        method:"POST",
+
+        body:JSON.stringify(data)
+    })
+
+    .then(response => response.json())
+
+    .then(data => {
+
+        document
+        .getElementById(
+        "successBox"
+        )
+
+        .innerHTML =
+        "✅ Feedback Submitted Successfully";
+
+        form.reset();
+    })
+
+    .catch(error => {
+
+        document
+        .getElementById(
+        "successBox"
+        )
+
+        .innerHTML =
+        "❌ Submission Failed";
+    });
+});
+
+</script>
+
 </body>
 </html>
